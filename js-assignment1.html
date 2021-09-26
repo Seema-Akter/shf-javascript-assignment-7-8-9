@@ -21,6 +21,10 @@
 		<h3 style="background-color: #da5b15; color: #fff; padding: 15px 0; text-align: center;">Girlfriend Shopping List and Budget</h3>
 		<div style=" width: 320px; margin: auto; height: 220px;" class="bill-sec">
 	<script>
+		var laptopCost = parseInt(prompt("Laptop Price"));
+		var mobileCost =  parseInt(prompt("Mobile Price"));
+		var watchCost =  parseInt(prompt("Watch Price"));
+
 		function shopping(laptop,mobile,watch){
 			var list = laptop + mobile + watch;
 			document.write("<h4>Laptop Price: "+laptop+"</h4>");
@@ -28,7 +32,7 @@
 			document.write("<h4>Watch Price: "+watch+"</h4>");
 			return list;
 		}
-	var sum = shopping(60000,20000,2000)
+	var sum = shopping(laptopCost, mobileCost, watchCost);
 	document.write("<h2>Total Cost: "+sum+"</h2>");
 	</script>
 				</div>
